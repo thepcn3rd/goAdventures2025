@@ -1,0 +1,17 @@
+{
+	"listeningPort": "0.0.0.0:8443",
+	"proxiedHTTPEndpoint": "http://127.0.0.1:8080",
+	"sslConfig": "keys/certConfig.json",
+	"sslCert": "keys/server.crt",
+	"sslKey": "keys/server.key",
+	"syslogOptions": {
+		"syslogEnabled": "True",
+		"syslogServer": "10.7.20.210:514",
+		"syslogOriginName": "proxy-server"
+	},
+	"saveFileOptions": {
+		"saveFileEnabled": "True",
+		"saveFileBaseName": "proxy",
+		"saveFileExtension": ".log"
+	}
+}
