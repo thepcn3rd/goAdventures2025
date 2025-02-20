@@ -1,0 +1,19 @@
+{
+	"smtpHost": "smtp.gmail.com",
+	"smtpPort": "587",
+	"smtpUsername": "ltrappett@gmail.com",
+	"smtpEncryptedPassword": ";lsdjf;ladfgj;dflghjdflgjdflgj",
+	"fromAddress": "ltrappett@gmail.com",
+	"toAddresses": [
+		{
+			"email": "ltrappett@gmail.com"
+		},
+		{
+			"email": "thepcn3rd@gmail.com"
+		}
+	],
+	"subject": "Test Email",
+	"body": "Test email...",	
+	"captureTLSKey": true,
+	"outputFile": "tlsKeylog.log"
+}

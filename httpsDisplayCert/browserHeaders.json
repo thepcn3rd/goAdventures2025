@@ -1,0 +1,14 @@
+{
+	"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.118 Safari/537.36",
+	"acceptLanguage": "en-US",
+	"upgradeInsecureRequests": "1",
+	"acceptEncoding": "gzip, deflate, br",
+	"connection": "keep-alive",
+	"_notes": "Leave any of the above headers blank to not populate them",
+	"additionalHeaders": [
+		{
+			"key": "Content-Type",
+			"value": "text/plain;charset=UTF-8"
+		}
+	]
+}
