@@ -1,0 +1,4 @@
+whoami
+net user
+net share
+ipconfig
