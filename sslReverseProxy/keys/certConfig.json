@@ -1,0 +1,13 @@
+{
+		"DNSNames": [
+			"blog.example.com",
+			"www.example.com"
+		],
+		"Org": "Example Inc",
+		"OrgUnit": "",
+		"CommonName": "example.com",
+		"City": "Lewiston",
+		"State": "ID",
+		"Country": "US",
+		"Email": "admin@example.com"
+	}
