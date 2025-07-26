@@ -1,0 +1,60 @@
+// View the data in a graph
+// MATCH (n)-[r]->(m) RETURN n, r, m
+
+// Find the longest path between nodes
+/**
+MATCH path = (start:IPAddress)-[:TO*]->(end:IPAddress)
+WHERE start <> end
+RETURN path, length(path) AS pathLength
+ORDER BY pathLength DESC
+LIMIT 1
+**/
+
+/** Specify a start IP Address - Using list2025.txt as a csv list
+MATCH path = (start:IPAddress)-[:TO*]->(end:IPAddress)
+WHERE start <> end AND start.address = "10.0.0.117"
+RETURN path, length(path) AS pathLength
+ORDER BY pathLength DESC
+**/
+
+/** Specify a start and end IP Address - Using list2025.txt as a csv list
+MATCH path = (start:IPAddress)-[:TO*]->(end:IPAddress)
+WHERE start <> end AND start.address = "10.0.0.117" AND end.address = "10.4.25.206"
+RETURN path, length(path) AS pathLength
+ORDER BY pathLength DESC
+**/
+
+/** Specify a start IP address and an end Subnet but with the starts with ... list2025.txt
+MATCH path = (start:IPAddress)-[:TO*]->(end:IPAddress)
+WHERE start <> end AND start.address = "10.0.0.117" AND end.address STARTS WITH "10.4.25."
+RETURN path, length(path) AS pathLength
+ORDER BY pathLength DESC
+**/
+
+// Find the longest path between nodes with a specific protocol
+/**
+MATCH path = (start:IPAddress)-[rels:TO*]->(end:IPAddress)
+WHERE start <> end AND ALL(r IN rels WHERE r.protocol = 'tcp')
+RETURN path, length(path) AS pathLength
+ORDER BY pathLength DESC
+LIMIT 2    // Adjust the limit as needed to capture the longest paths...
+**/
+
+/** Find the paths with a start.address and a specific protocol .. list2025.txt
+MATCH path = (start:IPAddress)-[rels:TO*]->(end:IPAddress)
+WHERE start <> end AND start.address = "10.0.0.117" AND ALL(r IN rels WHERE r.protocol = 'tcp')
+RETURN path, length(path) AS pathLength
+ORDER BY pathLength DESC
+**/
+
+/** Find the top 10 IP Addresses that have the most connections
+MATCH (n)
+WHERE NOT EXISTS { (n)-[r]->() }  // True end node (no outgoing relationships)
+WITH n, count{ ()-[r]->(n) } AS inDegree  // Count incoming relationships
+RETURN n, inDegree
+ORDER BY inDegree DESC
+LIMIT 10
+**/
+
+// Remove the data in the neo4j database
+// MATCH (n) DETACH DELETE n;
