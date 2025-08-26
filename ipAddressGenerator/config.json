@@ -1,0 +1,7 @@
+{
+  "source_subnet": "10.0.15.0/24",
+  "destination_subnet": "10.4.25.0/24",
+  "destination_ports": [80, 443, 22, 53, 3389],
+  "protocols": ["tcp", "udp"],
+  "count": 1000
+}
