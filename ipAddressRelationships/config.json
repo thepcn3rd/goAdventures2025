@@ -1,0 +1,23 @@
+{
+    "neo4juri": "bolt://localhost:7687",
+    "username": "neo4j",
+    "password": "l0st1nSpac3",
+    "concurrentProcessing": 10,
+    "_note": "When specifying a dynamicField for an IPNode, provide an example of the output whether a string, int, or ... The field needs to be capitalized... Fields below need to match the 1st column in a supporting csv",
+    "dynamicFields": {
+	    "VulnScan": "False",
+	    "Agent": "Missing"
+    },
+    "externalNetworks": [
+	    "145.6.0.0/16",
+	    "165.6.0.0/16"
+    ],
+    "internalNetworks": [
+	    "10.0.0.0/8",
+	    "172.16.0.0/12",
+	    "192.168.0.0/16"
+    ],
+    "ignoredNetworks": [
+            "169.254.0.0/16"
+    ]
+}
