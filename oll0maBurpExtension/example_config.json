@@ -1,0 +1,21 @@
+{
+	"queueServerURL": "https://127.0.0.1:8443",
+	"apiKey": "",
+	"_notesAPIKey": "If you set the API Key here it will override and populate in the extensions",
+	"ollamaURL": "http://127.0.0.1:11434",
+	"waitTime": 15,
+	"_notesWaitTime": "Time in minutes that the HTTP connection will wait for a response from the ollama server adjust based on size of model, streaming is false",
+	"systemPromptFile": "prompts/systemPrompt.txt",
+	"modelOptions": {
+		"num_ctx": 2048,
+		"temperature": 0.8,
+		"repeat_last_n": 64,
+		"repeat_penalty": 1.1,
+		"top_k": 40,
+	        "top_p": 0.9
+	},
+	"httpsEnabled": true,
+	"tlsConfig": "keys/tlsconfig.json",
+    	"tlsCert": "keys/tls.crt",
+    	"tlsKey": "keys/tls.key"
+}
