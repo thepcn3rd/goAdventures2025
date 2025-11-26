@@ -1,0 +1,8 @@
+{
+    "url": "https://api.pwnedpasswords.com/range/",
+    "requestsDelay": 3,
+    "userAgent": "goPwnedPasswords-Check-v1",
+    "offlineFilesDirectory": "offlineFiles",
+    "skipLoadOfflineFiles": false,
+    "skipSaveOfflineFiles": false
+}

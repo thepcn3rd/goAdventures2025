@@ -1,0 +1,11 @@
+{
+	"listeningPort": ":8080",
+	"tlsEnabled": true,
+	"sslConfig": "keys/certConfig.json",
+	"sslCert": "keys/server.crt",
+	"sslKey": "keys/server.key",
+	"credentialFile": "credentials.json",
+	"tokenFile": "token.json",
+	"archiveDirectory": "archive",
+	"query": "(in:inbox OR in:sent) (password OR taxes)"
+}
