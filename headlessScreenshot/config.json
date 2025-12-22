@@ -1,0 +1,32 @@
+{
+	"urlOption": "List",
+	"_urlOptionNotes": "urlOption should be File or List, a list will read from the url list, file from the specified file",
+	"urlListFile": "urlList.txt",
+	"urlList": [
+		{
+			"url": "https://ksl.com",
+			"description": ""
+		},
+		{
+			"url": "https://yahoo.com",
+			"description": ""
+		}
+	],
+	"outputPathPNG": "output",
+	"headlessBrowserConfig": {
+		"widthPNG": 1920,
+		"heightPNG": 1080,
+		"timeToLoadPageSeconds": 60
+	},
+	"_userAgentNotes": "You can have multiple user agents to emulate chrome, firefox, Edge, or mobile browsers",
+	"userAgents": [
+		{
+			"userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 GLS/100.10.9939.100",
+			"description": "Windows Chrome 125"
+		},
+		{
+			"userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5786.212 Safari/537.36",
+			"description": "Linux Chrome 116"
+		}
+	]
+}

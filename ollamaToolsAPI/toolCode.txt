@@ -1,0 +1,52 @@
+import os
+import requests
+from datetime import datetime
+from pydantic import BaseModel, Field
+
+apiURL = "http://10.27.20.197:8000"
+
+class Tools:
+    def __init__(self):
+        pass
+
+    def f1(self, ipaddr: str) -> str:
+        """
+        Analyze an IP Address and Find VirusTotal Information
+        :param ipaddr: The IP Address to evaluate
+        """
+
+        url = apiURL + "/f1?ipaddress=" + ipaddr
+        response = requests.get(url)
+        if response.status_code == 200:
+            return response.text
+        else:
+            return "Bad Request"
+
+    def f2(self, ipaddr: str) -> str:
+        """
+        Analyze an IP Address and Find Geo Information
+        :param ipaddr: The IP Address to evaluate
+        """
+
+        url = apiURL + "/f2?ipaddress=" + ipaddr
+        response = requests.get(url)
+        if response.status_code == 200:
+            return response.text
+        else:
+            return "Bad Request"
+
+    def f3(self, ipaddr: str) -> str:
+        """
+        Analyze an IP Address and Find Related Hostnames
+        :param ipaddr: The IP Address to evaluate
+        """
+
+        url = apiURL + "/f3?ipaddress=" + ipaddr
+        return getResponse(url)
+
+def getResponse(url: str) -> str:
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.text
+    else:
+        return "Bad Request"

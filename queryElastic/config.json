@@ -1,0 +1,14 @@
+{
+	"elasticURL": "https://10.27.20.210:9200",
+	"username": "username@email.local",
+	"password": "longpasswordlongpassword",
+	"elasticSettings": {
+		"index": "logs-syslog*",
+		"keywords": "golang dns server - forwarding query",
+		"lookbackTimeDays": -7,
+		"pageSize": 100,
+		"maxPages": 5,
+		"regexpRealMessage": "`for\\s([^\\s]+)\\sto`",
+		"_comment": "Currently the regex applies to the RealMessage returned by the elastic search query conducted. Remember to escape the backslash!"
+	}
+}

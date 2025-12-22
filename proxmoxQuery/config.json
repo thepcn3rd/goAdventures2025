@@ -1,0 +1,6 @@
+{
+	"tokenID": "tokenIDcreatedinProxmox",
+	"tokenSecret": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+	"APIURL": "https://10.10.10.10:8006"
+}
+

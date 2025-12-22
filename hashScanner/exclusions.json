@@ -1,0 +1,16 @@
+{
+    "maxFileSize": 1048576,
+    "binaryCheck": 512,
+    "matchStrings": [
+        "string1",
+        "string2"
+    ],
+    "regexs": [
+        "^123$",
+        "^abc$"
+    ],
+    "files": [
+	"file1",
+	"file2"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+	"teamsWebhookURL": "",
+	"debugFile": "debug.json",
+	"keywords": [
+		{
+			"value": "Cisco",
+			"description": "Cisco"
+		},
+		{
+			"value": "Linux",
+			"description": "Catch Linux Updates"
+		}
+	]
+}

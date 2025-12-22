@@ -1,0 +1,6 @@
+{
+	"appName": "AppName",
+	"accountName": "user@example.com",
+	"webServerPort": 8088,
+	"useCyberChefLocal": true
+}

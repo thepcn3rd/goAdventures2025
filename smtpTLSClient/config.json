@@ -1,0 +1,17 @@
+{
+    "smtpHost": "thepcn3rd.local",
+    "smtpPort": "587",
+    "smtpUsername": "thepcn3rd@thepcn3rd.local",
+    "smtpPassword": "AVeryGoodPasswordthatisUnguessable!!",
+    "fromAddress": "thepcn3rd@thepcn3rd.local",
+    "toAddresses": [
+        "thepcn3rd@thepcn3rd.local",
+        "thebabyn3rd@thepcn3rd.local"
+    ],
+    "subject": "Test Email",
+    "body": "Switch to HTML format to read this email...",
+    "htmlBodyFile": "test.html",
+    "captureTLSKey": false,
+    "outputFile": "tlsKey.log",
+    "attachment": ""
+}

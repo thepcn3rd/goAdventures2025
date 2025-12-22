@@ -1,0 +1,59 @@
+{
+    "listeningDomain": "4gr8.local",
+    "listeningHTTPPort": "8080",
+    "listeningTLSPort": "8443",
+    "listeningTCPPort": "9000",
+    "proxyInformation": [
+        {
+            "proxyType": "https",
+            "proxySubDomain": "api",
+            "proxyEndpoint": "http://localhost:8000",
+            "proxyNotes": "This is a test proxy"
+        },
+        {
+            "proxyType": "https",
+            "proxySubDomain": "app",
+            "proxyEndpoint": "http://localhost:8005",
+            "proxyNotes": "This is a test proxy"
+        },
+        {
+            "proxyType": "https",
+            "proxySubDomain": "admin2",
+            "proxyEndpoint": "https://login.4gr8.local",
+            "proxyNotes": "This is a test proxy"
+        },
+        {
+            "proxyType": "http",
+            "proxySubDomain": "admin3",
+            "proxyEndpoint": "http://localhost:10000",
+            "proxyNotes": "This is a test proxy"
+        },
+        {
+            "proxyType": "tcp",
+            "proxySubDomain": "admin4",
+            "proxyEndpoint": "localhost:18000",
+            "proxyNotes": "This is a test proxy",
+	    "_notes": "The last tcp proxy is used if more than 1 exists"
+        }
+    ],
+    "basicAuthOptions": {
+        "enabled": false,
+        "username": "thepcn3rd",
+        "password": "T3sting"
+    },
+    "tlsConfig": "keys/tlsconfig.json",
+    "tlsCert": "keys/tls.crt",
+    "tlsKey": "keys/tls.key",
+    "loggingOptions": {
+        "syslogOptions": {
+            "syslogEnabled": false,
+            "syslogServer": "localhost",
+            "syslogOriginName": "example.com"
+        },
+        "saveFileOptions": {
+            "saveFileEnabled": false,
+            "saveFileBaseName": "localhost",
+            "saveFileExtension": "example.com"
+        }
+    }
+}

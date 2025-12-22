@@ -1,0 +1,35 @@
+{
+	"upstreamDNS": "8.8.8.8:53",
+	"serverBanner": "Golang DNS Server",
+	"syslogOptions": {
+                "syslogEnabled": "True",
+                "syslogServer": "10.7.20.210:514",
+                "syslogOriginName": "dns-server"
+        },
+        "saveFileOptions": {
+                "saveFileEnabled": "True",
+                "saveFileBaseName": "dns-server",
+                "saveFileExtension": ".log"
+        },
+	"aRecords": [
+		{
+			"aName": "www.4gr8.local.",
+			"ip": "10.7.20.174"
+		},
+		{
+			"aName": "g.4gr8.local.",
+			"ip": "10.7.20.184"
+		},
+		{
+			"aName": "k.4gr8.local.",
+			"ip": "10.7.20.173"
+		}
+	],
+	"txtRecords": [
+		{
+			"txtName": "stuff.",
+			"txtMessage": "this_is_a_message_that_can_be_shared"
+		}
+	]
+}
+
